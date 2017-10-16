@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#240102</color>
+    <color name="colorPrimaryDark">#240102</color>
+    <color name="colorAccent">#240102</color>
+    <color name="color1">#ff6698</color>
+    <color name="color2">#61c3f2</color>
+    <color name="transpa">#83cad0d1</color>
+
+</resources>

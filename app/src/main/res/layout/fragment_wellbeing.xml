@@ -1,0 +1,186 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fujitsu.mobile_application.WellbeingFragment">
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:id="@+id/moodFrameLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:id="@+id/moodFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/currentMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:selectAllOnFocus="true"
+        android:text="Mood"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/moodLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mood of the Day"
+            android:textSize="30dp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/emFragDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="date"
+            android:text="Current Date"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/mood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:checkedButton="@+id/rbHappy">
+
+            <RadioButton
+                android:id="@+id/rbHappy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_happy"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Happy"
+                tools:ignore="RtlHardcoded" />
+
+            <RadioButton
+                android:id="@+id/rbSad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_sad"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Sad"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+            <RadioButton
+                android:id="@+id/rbAngry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_angry"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Angry"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+
+            <RadioButton
+                android:id="@+id/rbLove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_loved"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Loved"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+            <RadioButton
+                android:id="@+id/rbSick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_sick"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Sick"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rbSporty"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:drawableLeft="@drawable/ic_sporty"-->
+                <!--android:onClick="onRadioButtonClicked"-->
+                <!--android:text=" Sporty"-->
+                <!--tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rbGeeky"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:drawableLeft="@drawable/ic_nerd"-->
+                <!--android:onClick="onRadioButtonClicked"-->
+                <!--android:text=" Geeky"-->
+                <!--tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />-->
+
+            <RadioButton
+                android:id="@+id/rbHeartBroken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_heartbroken"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Heart Broken"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+            <RadioButton
+                android:id="@+id/rbRelaxed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_relieved"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Relaxed"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+            <RadioButton
+                android:id="@+id/rbStressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_stressed"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Stressed"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+            <RadioButton
+                android:id="@+id/rbInspired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/ic_inspired"
+                android:onClick="onRadioButtonClicked"
+                android:text=" Inspired"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/sbmtMood"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Submit"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+</FrameLayout>
+</ScrollView>

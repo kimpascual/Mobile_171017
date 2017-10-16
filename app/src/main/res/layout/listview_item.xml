@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+
+<!--<TextView-->
+<!--android:id="@+id/ranklabel"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="@string/ranklabel" />-->
+
+<TextView
+android:id="@+id/rank"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="30dp"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="Same Text"
+
+ />
+
+<!--<TextView-->
+<!--android:id="@+id/countrylabel"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@+id/ranklabel"-->
+<!--android:text="@string/countrylabel" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/country"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@+id/rank"-->
+<!--android:layout_toRightOf="@+id/countrylabel" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/populationlabel"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@+id/countrylabel"-->
+<!--android:text="@string/populationlabel" />-->
+
+<!--<TextView-->
+<!--android:id="@+id/population"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_below="@+id/country"-->
+<!--android:layout_toRightOf="@+id/populationlabel" />-->
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/model">-->
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+
+    <!--<RelativeLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/population2"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginTop="28dp"-->
+            <!--android:src="@drawable/coffee" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/rank"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/country"-->
+            <!--android:layout_alignLeft="@+id/country"-->
+            <!--android:layout_alignStart="@+id/country"-->
+            <!--android:text="TextView TextViewTextViewTexViewTextView TextViewTextViewTextView"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/country"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/population2"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_toEndOf="@+id/population2"-->
+        <!--android:layout_toRightOf="@+id/population2"-->
+        <!--android:ellipsize="end"-->
+        <!--android:gravity="start"-->
+        <!--android:maxLines="1"-->
+        <!--android:padding="10dp"-->
+        <!--android:text="Name wewewewewe aaaaaaaaaaaaa a aaaaaa aaaaaaaa a  dddddddddddddddda" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/population"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/country"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:layout_toRightOf="@+id/population2"-->
+            <!--android:ellipsize="end"-->
+            <!--android:gravity="start"-->
+            <!--android:maxLines="1"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="Name wewewewewe aaaaaaaaaaaaa a aaaaaa aaaaaaaa a  dddddddddddddddda" />-->
+
+     <!---->
+
+    <!--</RelativeLayout>-->
+<!--</RelativeLayout>-->
+

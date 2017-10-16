@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fujitsu.mobile_application.DetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView asadsdsdsdsds"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="30dp"
+                android:text="off the TextView csize of the TextView cerI wantewac erI want to know h"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp"
+                />
+            <!--app:trimExpandedText="Read More"-->
+            <!--app:trimCollapsedText="Read Less"-->
+            <!--app:trimMode="trimModeLine"-->
+            <!--app:trimLines="3"-->
+            <!--app:colorClickableText="@color/color2"-->
+
+
+            <TextView
+                android:id="@+id/population"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView asadsdsdsdsdsds"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <com.dmallcott.dismissibleimageview.DismissibleImageView
+                android:id="@+id/imageEvent"
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/mainrecycle" />
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent" >-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/ranklabel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/ranklabel" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/rank"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@+id/ranklabel" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/countrylabel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/ranklabel"-->
+        <!--android:text="@string/countrylabel" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/country"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/rank"-->
+        <!--android:layout_toRightOf="@+id/countrylabel" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/populationlabel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/countrylabel"-->
+        <!--android:text="@string/populationlabel" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/population"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/country"-->
+        <!--android:layout_toRightOf="@+id/populationlabel" />-->
+
+<!--</RelativeLayout>-->

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="fujitsu.mobile_application.CalendarDetailActivity">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        <!--android:layout_height="592dp"-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="-20dp"-->
+            <!--android:layout_marginLeft="0dp"-->
+            <!--android:layout_marginTop="-20dp"-->
+            <!--android:maxHeight="350dp"-->
+            <!--android:maxWidth="350dp"-->
+            <!--app:srcCompat="@drawable/diversity1" />-->
+        <!--//android:scaleType="fitCenter"-->
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="09-25-2017"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView asd asd sasadsdsdsdsdsds"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <!--<com.borjabravo.readmoretextview.ReadMoreTextView-->
+            <!--android:id="@+id/readmore"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal|center"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:paddingTop="20dp"-->
+            <!--android:text="off the TextView cerI wantewac erI eacerI want kw acerI wanthe size of the TextView cerI wantewac erI eacerI want kw acerI wanthe size of the TextView cerI wantewac erI eacerI want kw acerI wanthe size of the TextView cerI wantewac erI eacerI want kw acerI wanthe size of the TextView cerI wantewac erI eacerI want kw acerI wanthe size of the TextView cerI wantewac erI want to know h"-->
+            <!--app:trimExpandedText="Read More"-->
+            <!--app:trimCollapsedText="Read Less"-->
+            <!--app:trimMode="trimModeLine"-->
+            <!--app:trimLines="3"-->
+            <!--app:colorClickableText="@color/color2"-->
+            <!--tools:layout_editor_absoluteX="0dp"-->
+            <!--tools:layout_editor_absoluteY="68dp"-->
+            <!--/>-->
+
+        <com.dmallcott.dismissibleimageview.DismissibleImageView
+            android:id="@+id/imageMain"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/mainrecycle" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
