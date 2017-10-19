@@ -29,8 +29,8 @@ import java.util.List;
  */
 public class OprPracticeFragment extends Fragment {
 
-    int value[] = {20, 30, 30, 20};
-    String category[] = {"Category A","Category B","Category C","Category D"};
+    int value[] = {19, 5, 3, 16, 3, 16, 11, 13, 14 };
+    String category[] = {"Happy","Sad","Angry", "Inspired", "Loved","Sick","Heart Broken","Relaxed","Stressed"};
     PieChart cha;
     PieData data;
     View v;
@@ -118,7 +118,7 @@ public class OprPracticeFragment extends Fragment {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            Toast.makeText(context, "Operation Practice", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Mood Graph", Toast.LENGTH_SHORT).show();
 
         }
     }

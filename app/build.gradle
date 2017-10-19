@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'fujitsu'
+            keyPassword 'fujitsu'
+            storeFile file('E:/kim/101917/Keystore/keystore.jks')
+            storePassword 'fujitsu'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "26.0.1"
     defaultConfig {
@@ -17,6 +25,14 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            jniDebuggable true
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+            debuggable true
+            jniDebuggable true
         }
     }
 }

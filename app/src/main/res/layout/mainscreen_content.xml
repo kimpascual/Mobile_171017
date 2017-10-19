@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="#66FF0000"
+            android:background="#F44336"
             app:itemIconTint="#FDFDFE"
             app:itemTextColor="#FDFDFE"
             app:menu="@menu/bottom_navigation" />

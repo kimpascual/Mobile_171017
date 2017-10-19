@@ -99,7 +99,7 @@ public class MainScreen extends AppCompatActivity
         FragmentManager mainFrag = getSupportFragmentManager();
         FragmentTransaction mainTrans = mainFrag.beginTransaction();
         setTitle("Wellbeing");
-        WellbeingFragment wellFrag = new WellbeingFragment();
+        WellBeingFrag wellFrag = new WellBeingFrag();
         wellFrag.setArguments(bundle);
         mainTrans.replace(R.id.frag_content, wellFrag).commit();
         botNavigation.setSelectedItemId(R.id.botMenu_wellbeing);
@@ -159,14 +159,13 @@ public class MainScreen extends AppCompatActivity
 
                 case R.id.botMenu_wellbeing :
                     setTitle("Wellbeing");
-                    WellbeingFragment welFrag = new WellbeingFragment();
+                    WellBeingFrag welFrag = new WellBeingFrag();
                     welFrag.setArguments(bundle);
                     botTransaction.replace(R.id.frag_content, welFrag).commit();
                     return true;
 
                 case R.id.botMenu_operating :
                     setTitle("Operating Practices");
-
                     OperatingFragment oprFrag = new OperatingFragment();
                     oprFrag.setArguments(bundle);
                     botTransaction.replace(R.id.frag_content, oprFrag).commit();
@@ -199,11 +198,13 @@ public class MainScreen extends AppCompatActivity
                 sideTransaction.replace(R.id.frag_content, new CalendarFragment()).commit();
                 bottomViewLay.setVisibility(LinearLayout.GONE);
                 break;
-            case R.id.sideMenu_calendar2 :
-//                sideTransaction.replace(R.id.frag_content, new CalendarFragment()).commit();
-//                bottomViewLay.setVisibility(LinearLayout.GONE);
-                Intent i = new Intent(this, CalendarView.class);
-                startActivity(i);
+            case R.id.sideMenu_WellBeing :
+                sideTransaction.replace(R.id.frag_content, new WellbeingFragment()).commit();
+                bottomViewLay.setVisibility(LinearLayout.GONE);
+                break;
+            case R.id.sideMenu_Graph :
+                sideTransaction.replace(R.id.frag_content, new OprPracticeFragment()).commit();
+                bottomViewLay.setVisibility(LinearLayout.GONE);
                 break;
 //            case R.id.nav_slideshow:
 //                bottomViewLay.setVisibility(LinearLayout.GONE);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fujitsu.mobile_application">
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -9,8 +9,9 @@
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <application
+        android:largeHeap="true"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/griplogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -36,6 +37,14 @@
         <activity android:name=".DetailActivity" />
         <!-- <activity android:name=".Calendar4Activity" /> -->
         <activity android:name=".ListEvents" />
+        <activity android:name=".ListEvents2" />
+        <activity android:name=".ListFeb14" />
+        <activity android:name=".ListJul18" />
+        <activity android:name=".ListJun07" />
+        <activity android:name=".ListJun25" />
+        <activity android:name=".ListMay07" />
+        <activity android:name=".ListAug17" />
+
         <!-- <activity android:name=".CalendarAdapter" /> -->
         <!-- <activity android:name=".Utility" />Utility -->
         <activity android:name=".CalendarView" />

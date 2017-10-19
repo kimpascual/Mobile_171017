@@ -88,38 +88,75 @@ public class CalendarFragment extends Fragment {
         compactCalendar.setUseThreeLetterAbbreviation(true);
         calendarMonth = (TextView) view.findViewById(R.id.calMonth);
 
-        Event ev1 = new Event(Color.BLUE, 1509095401000L, "test");
-        compactCalendar.addEvent(ev1);
-        Event ev2 = new Event(Color.BLUE, 1502961001000L, "test");
-        compactCalendar.addEvent(ev2);
+        Event may30 = new Event(Color.BLUE, 1496134800000L, "test");
+        compactCalendar.addEvent(may30);
+        Event aug17 = new Event(Color.BLUE, 1502960400000L, "test");
+        compactCalendar.addEvent(aug17);
 
-        Event ev3 = new Event(Color.BLUE, 1494148201000L, "test");
-        compactCalendar.addEvent(ev3);
+        Event feb14 = new Event(Color.BLUE, 1487062800000L, "test");
+        compactCalendar.addEvent(feb14);
+
+        Event jul18 = new Event(Color.BLUE, 1500368400000L, "test");
+        compactCalendar.addEvent(jul18);
+
+        Event jun07 = new Event(Color.BLUE, 1496826000000L, "test");
+        compactCalendar.addEvent(jun07);
+
+        Event jun25 = new Event(Color.BLUE, 1498381200000L, "test");
+        compactCalendar.addEvent(jun25);
+
+        Event oct14 = new Event(Color.BLUE, 1507971600000L, "test");
+        compactCalendar.addEvent(oct14);
+
 //        List<Event> events = compactCalendar.getEvents(1503824400000L);
 //        Log.d(TAG, "Events: "+ events);
 
         compactCalendar.setListener(new CompactCalendarView.CompactCalendarViewListener() {
             @Override
             public void onDayClick(Date dateClicked){
-                if (dateFormatDay.format(dateClicked).toString().compareTo("2017-10-27") == 0){
+                if (dateFormatDay.format(dateClicked).toString().compareTo("2017-05-30") == 0){
                     Toast.makeText(CalendarFragment.this.getContext(), "There is an event", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(getActivity(), ListEvents.class);
+                    Intent i = new Intent(getActivity(), ListMay07.class);
                     i.putExtra("Date", "Sample date");
                     startActivity(i);
 
-                }else  if (dateFormatDay.format(dateClicked).toString().compareTo("2017-08- 17") == 0){
+                }else  if (dateFormatDay.format(dateClicked).toString().compareTo("2017-08-17") == 0){
                     Toast.makeText(CalendarFragment.this.getContext(), "There is an event", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(getActivity(), ListEvents.class);
+                    Intent i = new Intent(getActivity(), ListAug17.class);
                     i.putExtra("Date", "Sample date");
                     startActivity(i);
 
-                }else  if (dateFormatDay.format(dateClicked).toString().compareTo("2017-06-7") == 0){
+                }else  if (dateFormatDay.format(dateClicked).toString().compareTo("2017-10-14") == 0){
                     Toast.makeText(CalendarFragment.this.getContext(), "There is an event", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(getActivity(), ListEvents.class);
+                    Intent i = new Intent(getActivity(), ListEvents2.class);
                     i.putExtra("Date", "Sample date");
                     startActivity(i);
 
-                }else {
+                }else  if (dateFormatDay.format(dateClicked).toString().compareTo("2017-07-18") == 0){
+                    Toast.makeText(CalendarFragment.this.getContext(), "There is an event", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(getActivity(), ListJul18.class);
+                    i.putExtra("Date", "Sample date");
+                    startActivity(i);
+
+                } else  if (dateFormatDay.format(dateClicked).toString().compareTo("2017-02-14") == 0){
+                Toast.makeText(CalendarFragment.this.getContext(), "There is an event", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getActivity(), ListFeb14.class);
+                i.putExtra("Date", "Sample date");
+                startActivity(i);
+
+            }else  if (dateFormatDay.format(dateClicked).toString().compareTo("2017-06-07") == 0){
+                Toast.makeText(CalendarFragment.this.getContext(), "There is an event", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getActivity(), ListJun07.class);
+                i.putExtra("Date", "Sample date");
+                startActivity(i);
+
+            }else if (dateFormatDay.format(dateClicked).toString().compareTo("2017-06-25") == 0){
+                    Toast.makeText(CalendarFragment.this.getContext(), "There is an event", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(getActivity(), ListJun25.class);
+                    i.putExtra("Date", "Sample date");
+                    startActivity(i);
+
+                }else{
                     Toast.makeText(CalendarFragment.this.getContext(), "No Event", Toast.LENGTH_SHORT).show();
 //                    Fragment fragment = new CalendarFeed();
 //                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
